@@ -37,6 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 
 # xcowfortune is the only .desktop file because the other program
 #(xcowsay, xcowthink and xcowdream) need an argument
+install -d $RPM_BUILD_ROOT%{_desktopdir}
 cp -a %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %find_lang %{name}
