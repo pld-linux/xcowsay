@@ -1,12 +1,12 @@
 Summary:	Displays a cute cow and message on your desktop
 Name:		xcowsay
-Version:	1.2
+Version:	1.3
 Release:	1
 License:	GPL v3+
 Group:		Applications/Games
 URL:		http://www.doof.me.uk/xcowsay
 Source0:	http://www.nickg.me.uk/files/%{name}-%{version}.tar.gz
-# Source0-md5:	a0f8e511a5c07d9e48057ad8100fa42b
+# Source0-md5:	1df62b31e6bc57fbeb386da4539bb21d
 Source1:	xcowfortune.desktop
 BuildRequires:	dbus-glib-devel
 BuildRequires:	gettext
