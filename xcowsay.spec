@@ -9,8 +9,9 @@ Source0:	http://www.nickg.me.uk/files/%{name}-%{version}.tar.gz
 # Source0-md5:	1df62b31e6bc57fbeb386da4539bb21d
 Source1:	xcowfortune.desktop
 BuildRequires:	dbus-glib-devel
-BuildRequires:	gettext
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel
+BuildRequires:	pkgconfig
 Requires:	fortune-mod
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
