@@ -1,7 +1,7 @@
 Summary:	Displays a cute cow and message on your desktop
 Name:		xcowsay
 Version:	1.3
-Release:	1
+Release:	2
 License:	GPL v3+
 Group:		Applications/Games
 URL:		http://www.doof.me.uk/xcowsay
@@ -12,7 +12,8 @@ BuildRequires:	dbus-glib-devel
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	pkgconfig
-Requires:	fortune-mod
+Suggests:	fortune-mod
+Suggests:	fortune-mod-data
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
