@@ -1,13 +1,14 @@
 Summary:	Displays a cute cow and message on your desktop
 Name:		xcowsay
 Version:	1.3
-Release:	2
+Release:	3
 License:	GPL v3+
 Group:		Applications/Games
 URL:		http://www.doof.me.uk/xcowsay
 Source0:	http://www.nickg.me.uk/files/%{name}-%{version}.tar.gz
 # Source0-md5:	1df62b31e6bc57fbeb386da4539bb21d
 Source1:	xcowfortune.desktop
+Source2:	xcowsay.png
 BuildRequires:	dbus-glib-devel
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel
@@ -39,8 +40,9 @@ rm -rf $RPM_BUILD_ROOT
 
 # xcowfortune is the only .desktop file because the other program
 #(xcowsay, xcowthink and xcowdream) need an argument
-install -d $RPM_BUILD_ROOT%{_desktopdir}
-cp -a %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
+cp -p %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+cp -p %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %find_lang %{name}
 
@@ -57,3 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man6/xcowsay.6*
 %{_datadir}/xcowsay
 %{_desktopdir}/xcowfortune.desktop
+%{_pixmapsdir}/xcowsay.png

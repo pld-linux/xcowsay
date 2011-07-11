@@ -2,6 +2,7 @@
 Encoding=UTF-8
 Type=Application
 Categories=Amusement;
+Icon=xcowsay
 Name=xcowfortune
 Terminal=false
 Comment=Displays a cute cow saying a fortune
