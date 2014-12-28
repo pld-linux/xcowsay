@@ -10,7 +10,7 @@ Source0:	http://www.nickg.me.uk/files/%{name}-%{version}.tar.gz
 Source1:	xcowfortune.desktop
 Source2:	xcowsay.png
 BuildRequires:	dbus-glib-devel
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+2-devel
 BuildRequires:	pkgconfig
 Suggests:	fortune-mod
